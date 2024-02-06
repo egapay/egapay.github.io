@@ -1,0 +1,7 @@
+Hi! My name is Ethan, I am currently a 4th year Computing and Information Technology student at the Rochester Institute of Technology doing a concentration in Web Development and Databases. 
+
+Previously, I have done Co-ops in different roles at different places. From being a Systems Administrator intern at a local Rochester company, to a networking role at Cisco where I achieved my CCNA and DevNet certifications.
+
+I am now pursuing an interest in the Web Development space, as my previously learned database skills would work in tandem with my web development skills. With the combination of these two, I seek to become a full-stack developer in my career. 
+
+Currently, I am focusing more on front-end development, learning Javascript and React. After these, I am looking to hone my back-end development skills with Node.js and Python's Django/Flask. With the learning of these skills, I look forward to creating several full-stack projects to display here on my portfolio!
