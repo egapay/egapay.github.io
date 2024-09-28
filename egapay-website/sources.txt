@@ -1,0 +1,7 @@
+Component Library:
+https://daisyui.com/
+https://headlessui.com/
+https://www.react-spring.dev/ <- for fadeIn type animations
+
+Styles:
+https://tailwindcss.com/
