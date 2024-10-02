@@ -3,7 +3,7 @@ import data from '../assets/text.json';
 import FadeIn from 'react-fade-in/lib/FadeIn';
 const MainContent = ({activeSection}) => {
   return (
-    <section className="w-3/4 h-screen px-6 bg-main-background">
+    <section className="w-full lg:w-3/4 h-auto lg:h-screen px-6 bg-main-background">
       <div className="text-2xl h-screen flex flex-col justify-center">
         {activeSection === "Landing" &&
         <>

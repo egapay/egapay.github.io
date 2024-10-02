@@ -11,7 +11,7 @@ const Homepage = () => {
 
   return (
     <>
-        <div className="flex text-main-text">
+        <div className="flex text-main-text flex-col lg:flex-row">
             <Sidenav onButtonClick={handleSelectedSection}></Sidenav>
             <MainContent activeSection={activeSection}></MainContent>
         </div>
