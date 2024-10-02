@@ -1,43 +1,56 @@
 /* eslint-disable react/prop-types */
+import data from '../assets/text.json';
+import FadeIn from 'react-fade-in/lib/FadeIn';
 const MainContent = ({activeSection}) => {
   return (
     <section className="w-3/4 h-screen px-6 bg-main-background">
       <div className="text-2xl h-screen flex flex-col justify-center">
         {activeSection === "Landing" &&
         <>
-          <p>Graduating Senior at Rochester Institute of Technology</p>
-          <p>Concentration on Web Development and Databases</p>
+        <FadeIn>
+          <p>{data.landingText.title}</p>
+          <p>{data.landingText.subtitle}</p>
+        </FadeIn>
         </>
           
         }
         {activeSection === "About" && 
-          
-            <p className="p-40">Hello! I&apos;m Ethan, a 4th-year Computing and Information Technology student at the 
-                          Rochester Institute of Technology, concentrating in Web Development and Databases.
-                          Throughout my academic journey, I&apos;ve undertaken diverse Co-op roles in various settings. 
-                          I served as a Systems Administrator intern at a local Rochester company and took on a networking 
-                          role at Cisco, where I earned my CCNA and DevNet certifications.
-
-              My professional evolution has led me to focus on the dynamic realm of Web Development. 
-                Leveraging my acquired database skills, I am passionate about integrating them seamlessly into my 
-                web development expertise. The fusion of these skill sets propels my ambition to evolve into a proficient 
-                full-stack developer.
-                At present, my emphasis lies in front-end development, with a dedicated focus on mastering Javascript 
-                and React. Post this phase, I am eager to refine my back-end development proficiency using technologies 
-                such as Node.js and Python&apos;s Django/Flask. This continuous learning journey propels me toward the creation 
-                of compelling full-stack projects, which I am excited to showcase on my portfolio!</p>
+          <FadeIn>
+            <p>{data.aboutText.aboutContent}</p>
+          </FadeIn>
+            
           
         }
         {activeSection === "Skills" && 
+          <>
+            <FadeIn>
+              <h1>Front-End</h1>
+              <p>React</p>
+              <p>Angular</p>
+              <p>JavaScript</p>
 
-            <p>Skills</p>
+              <h1>Back-End</h1>
+              <p>Python</p>
+              <p>Java</p>
+              <p>NodeJS</p>
+              <p>ExpressJS</p>
 
+              <h1>Database</h1>
+              <p>MySQL</p>
+              <p>MongoDB</p>
+              <p>MariaDB</p>
+            </FadeIn>
+          </>
         }
         {activeSection === "Projects" && 
+        <FadeIn>
           <p>Projects</p>
+        </FadeIn>
         }
         {activeSection === "Contact" && 
+        <FadeIn>
           <p>Contact</p>
+        </FadeIn>
         }
       </div>
     </section>
