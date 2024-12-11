@@ -1,6 +1,9 @@
 /* eslint-disable react/prop-types */
 import data from "../assets/text.json";
 import FadeIn from "react-fade-in/lib/FadeIn";
+
+import Projects from "./Projects";
+
 const MainContent = ({ activeSection }) => {
   return (
     <section className="w-full lg:w-3/4 h-auto lg:h-screen px-6 bg-main-background">
@@ -40,23 +43,7 @@ const MainContent = ({ activeSection }) => {
           </>
         )}
         {activeSection === "Projects" && (
-          <FadeIn>
-            <div>
-              <h1 className="text-3xl py-5">
-                <a
-                  href="https://egapay.github.io/steam-game-analysis/"
-                  className="link-hover"
-                  target="_blank"
-                >
-                  Top Steam Game Analysis
-                </a>
-              </h1>
-              <div className="flex flex-row space-x-5">
-                <p className="">dwada</p>
-                <img className="w-1/4" src="placeholder.jpg"></img>
-              </div>
-            </div>
-          </FadeIn>
+          <Projects projectList={data.projects}></Projects>
         )}
         {activeSection === "Contact" && (
           <FadeIn>
