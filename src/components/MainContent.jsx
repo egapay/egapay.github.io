@@ -7,7 +7,7 @@ import Projects from "./Projects";
 const MainContent = ({ activeSection }) => {
   return (
     <section className="w-full lg:w-3/4 h-auto lg:h-screen px-6 bg-main-background">
-      <div className="text-2xl h-screen flex flex-col justify-center">
+      <div className="text-2xl h-full lg:h-screen flex flex-col justify-center overscroll-y-auto">
         {activeSection === "Landing" && (
           <>
             <FadeIn>
@@ -47,7 +47,22 @@ const MainContent = ({ activeSection }) => {
         )}
         {activeSection === "Contact" && (
           <FadeIn>
-            <p>Contact</p>
+            <p>
+              LinkedIn:{" "}
+              <a
+                href="https://www.linkedin.com/in/ethan-gapay/"
+                className="link"
+                target="_blank"
+              >
+                https://www.linkedin.com/in/ethan-gapay/
+              </a>
+            </p>
+            <p>
+              Email:{" "}
+              <a href="mailto:ethantgapay@gmail.com" className="link">
+                ethantgapay@gmail.com
+              </a>
+            </p>
           </FadeIn>
         )}
       </div>
