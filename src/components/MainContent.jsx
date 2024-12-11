@@ -48,7 +48,7 @@ const MainContent = ({ activeSection }) => {
         {activeSection === "Contact" && (
           <FadeIn>
             <p>
-              LinkedIn:{" "}
+              LinkedIn:
               <a
                 href="https://www.linkedin.com/in/ethan-gapay/"
                 className="link"
@@ -58,7 +58,7 @@ const MainContent = ({ activeSection }) => {
               </a>
             </p>
             <p>
-              Email:{" "}
+              Email:
               <a href="mailto:ethantgapay@gmail.com" className="link">
                 ethantgapay@gmail.com
               </a>
