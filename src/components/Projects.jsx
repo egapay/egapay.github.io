@@ -8,13 +8,13 @@ const Projects = ({ projectList }) => {
           <div className="my-5 group" key={index}>
             <a href={project.href} target="_blank">
               <div className="bg-main-secondary p-5 rounded-xl">
-                <h1 className="text-4xl pt-4 pb-1 group-hover:font-semibold inline-block">
+                <h1 className="text-4xl pt-4 pb-1 lg:group-hover:font-semibold inline-block">
                   {project.title}
                 </h1>
                 <p className="pb-4 italic text-lg">{project.description}</p>
-                <div className="flex flex-row space-x-3">
+                <div className="flex flex-row space-x-3 overflow-scroll-auto overflow-y-hidden">
                   {project.tags.map((tag, index) => (
-                    <div className="badge badge-neutral" key={index}>
+                    <div className="badge badge-neutral h-auto" key={index}>
                       {tag}
                     </div>
                   ))}

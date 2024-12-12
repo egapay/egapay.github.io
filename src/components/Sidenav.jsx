@@ -47,12 +47,12 @@ const Sidenav = ({ onButtonClick }) => {
         >
           Projects
         </button>
-        <button
+        {/* <button
           onClick={() => onButtonClick("Contact")}
           className="btn btn-xs xs:btn-sm sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl w-1/5 lg:w-1/2 bg-main-text"
         >
           Contact
-        </button>
+        </button> */}
       </div>
     </section>
   );

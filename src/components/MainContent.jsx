@@ -2,6 +2,7 @@
 import data from "../assets/text.json";
 import FadeIn from "react-fade-in/lib/FadeIn";
 
+import About from "./About";
 import Projects from "./Projects";
 
 const MainContent = ({ activeSection }) => {
@@ -11,15 +12,15 @@ const MainContent = ({ activeSection }) => {
         {activeSection === "Landing" && (
           <>
             <FadeIn>
-              <p>{data.landingText.title}</p>
-              <p>{data.landingText.subtitle}</p>
+              <div className="bg-main-secondary p-5 rounded-xl inline-block">
+                <p>{data.landingText.title}</p>
+                <p>{data.landingText.subtitle}</p>
+              </div>
             </FadeIn>
           </>
         )}
         {activeSection === "About" && (
-          <FadeIn>
-            <p>{data.aboutText.aboutContent}</p>
-          </FadeIn>
+          <About aboutText={data.aboutText}></About>
         )}
         {activeSection === "Skills" && (
           <>
@@ -45,7 +46,7 @@ const MainContent = ({ activeSection }) => {
         {activeSection === "Projects" && (
           <Projects projectList={data.projects}></Projects>
         )}
-        {activeSection === "Contact" && (
+        {/* {activeSection === "Contact" && (
           <FadeIn>
             <p>
               LinkedIn:
@@ -64,7 +65,7 @@ const MainContent = ({ activeSection }) => {
               </a>
             </p>
           </FadeIn>
-        )}
+        )} */}
       </div>
     </section>
   );

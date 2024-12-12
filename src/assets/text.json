@@ -4,13 +4,10 @@
     "subtitle": "Concentration on Web Development and Databases"
   },
   "aboutText": {
-    "aboutContent": [
-      "Hello, I'm Ethan! I am an aspiring data analyst and full-stack developer. ",
-      "I graduated Rochester Institute of Technology with a degree in Computing and Information Technology in 2024. ",
-      "I have always had a passion for technology, ever since I was little I was doing all different kinds of things with my laptop. ",
-      "I enjoy now working with large datasets, making cool websites, and automation. ",
-      "Outside of the technical things, I enjoy rock climbing, fitness, hiking, music, and spending time with friends and family. "
-    ]
+    "p1": "Hello, I'm Ethan! I am an aspiring data analyst and full-stack developer. I graduated Rochester Institute of Technology with a degree in Computing and Information Technology in 2024.",
+    "p2": "I have always had a passion for technology, ever since I was little. Currently, I'm interested in working with large datasets, making cool websites, and automation.",
+    "p3": "Outside of the technical things, I enjoy rock climbing, fitness, hiking, music, and spending time with friends and family.",
+    "p4": "Feel free to get in touch with me, my contact information is listed below."
   },
   "projects": [
     {
