@@ -5,6 +5,30 @@
     "p3": "Outside of the technical things, I enjoy rock climbing, fitness, hiking, music, and spending time with friends and family.",
     "p4": "Feel free to get in touch with me, my contact information is listed below."
   },
+  "skills": [
+    {
+      "title": "Data Analysis and Visualization",
+      "skillList": ["Python", "Power BI", "Tableau", "Pandas"]
+    },
+    {
+      "title": "Database Management",
+      "skillList": [
+        "PostgreSQL",
+        "MySQL",
+        "MariaDB",
+        "Microsoft SQL Server",
+        "MongoDB"
+      ]
+    },
+    {
+      "title": "General Software Development",
+      "skillList": ["JavaScript", "Java", "PHP"]
+    },
+    {
+      "title": "Front-End and Back-End Frameworks",
+      "skillList": ["React", "Angular", "Node.js", "Express.js"]
+    }
+  ],
   "projects": [
     {
       "href": "https://egapay.github.io/steam-game-analysis/",

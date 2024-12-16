@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import data from "../assets/text.json";
-import FadeIn from "react-fade-in/lib/FadeIn";
+import Skills from "./Skills";
 
 import About from "./About";
 import Projects from "./Projects";
@@ -13,25 +13,7 @@ const MainContent = ({ activeSection }) => {
           <About aboutText={data.aboutText}></About>
         )}
         {activeSection === "Skills" && (
-          <>
-            <FadeIn>
-              <h1>Front-End</h1>
-              <p>React</p>
-              <p>Angular</p>
-              <p>JavaScript</p>
-
-              <h1>Back-End</h1>
-              <p>Python</p>
-              <p>Java</p>
-              <p>NodeJS</p>
-              <p>ExpressJS</p>
-
-              <h1>Database</h1>
-              <p>MySQL</p>
-              <p>MongoDB</p>
-              <p>MariaDB</p>
-            </FadeIn>
-          </>
+          <Skills skillsData={data.skills}></Skills>
         )}
         {activeSection === "Projects" && (
           <Projects projectList={data.projects}></Projects>

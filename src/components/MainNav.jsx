@@ -80,7 +80,9 @@ const MainNav = ({ onButtonClick }) => {
                     <li>
                       <button
                         onClick={() => handleSetActive("About")}
-                        className={activeButton === "About" ? "btn-active" : ""}
+                        className={`text-main-background ${
+                          activeButton === "About" ? "btn-active" : ""
+                        }`}
                       >
                         About
                       </button>
@@ -88,9 +90,9 @@ const MainNav = ({ onButtonClick }) => {
                     <li>
                       <button
                         onClick={() => handleSetActive("Skills")}
-                        className={
+                        className={`text-main-background ${
                           activeButton === "Skills" ? "btn-active" : ""
-                        }
+                        }`}
                       >
                         Skills
                       </button>
@@ -98,9 +100,9 @@ const MainNav = ({ onButtonClick }) => {
                     <li>
                       <button
                         onClick={() => handleSetActive("Projects")}
-                        className={
+                        className={`text-main-background ${
                           activeButton === "Projects" ? "btn-active" : ""
-                        }
+                        }`}
                       >
                         Projects
                       </button>
