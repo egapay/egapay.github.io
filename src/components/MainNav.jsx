@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import "./MainNav.css";
+import resume from "../assets/resume.pdf";
 import { useState, useRef } from "react";
 
 const MainNav = ({ onButtonClick }) => {
@@ -13,6 +14,10 @@ const MainNav = ({ onButtonClick }) => {
 
     setActiveButton(button);
     onButtonClick(button);
+  };
+
+  const openPdf = () => {
+    window.open(resume, "_blank");
   };
 
   return (
@@ -64,6 +69,12 @@ const MainNav = ({ onButtonClick }) => {
           >
             Projects
           </button>
+          <button
+            className={`btn btn-xs xs:btn-sm sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl w-1/5 lg:w-1/2 bg-main-text`}
+            onClick={openPdf}
+          >
+            Resume
+          </button>
         </div>
       </section>
       <section className="flex lg:hidden">
@@ -105,6 +116,14 @@ const MainNav = ({ onButtonClick }) => {
                         }`}
                       >
                         Projects
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        className="text-main-background"
+                        onClick={openPdf}
+                      >
+                        Resume
                       </button>
                     </li>
                   </ul>

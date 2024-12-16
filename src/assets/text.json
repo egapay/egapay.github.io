@@ -46,13 +46,19 @@
       "href": "https://www.margosdreamfoundation.com/home",
       "title": "Margo's Dream Foundation",
       "description": "Website for non-profit organization",
-      "tags": ["Full Stack Development", "React", "Javascript"]
+      "tags": ["Front-End Development", "React", "Javascript", "Tailwind CSS"]
+    },
+    {
+      "href": "https://people.rit.edu/~etg5588/ISTE340/iSchoolProject/",
+      "title": "RIT iSchool Website Recreate",
+      "description": "Rehauling RIT's iSchool webpage",
+      "tags": ["Front-End Development", "React", "Javascript", "Tailwind CSS"]
     },
     {
       "href": "https://github.com/egapay/mongo-project-lazer",
-      "title": "Meteor Landing Website",
+      "title": "Meteor Landing Project",
       "description": "Project to display meteor landings from NASA's dataset",
-      "tags": ["Full Stack Development", "Python", "MongoDB", "HTML/CSS"]
+      "tags": ["Full-Stack Development", "Python", "MongoDB", "HTML/CSS"]
     }
   ]
 }
