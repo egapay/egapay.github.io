@@ -11,6 +11,7 @@ export default {
       "main-secondary": "#333333",
       "main-accent": "#a69582",
       "main-black": "#000000",
+      "main-white": "#FFFFFF",
     },
   },
 

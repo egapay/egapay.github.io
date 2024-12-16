@@ -87,7 +87,7 @@ const MainNav = ({ onButtonClick }) => {
               <li>
                 <details ref={dropdownRef}>
                   <summary>{activeButton}</summary>
-                  <ul className="bg-base-100 rounded-t-none p-2">
+                  <ul className="bg-main-white rounded-t-none p-2">
                     <li>
                       <button
                         onClick={() => handleSetActive("About")}
