@@ -12,7 +12,7 @@ const About = (props) => {
           <p className="py-5">{props.aboutText.p4}</p>
         </FadeIn>
       </div>
-      <div className=" my-5 justify-center w-full">
+      <div className="my-5 justify-center w-full">
         <FadeIn className="flex justify-center">
           <div className="rounded-xl p-5 space-x-2 lg:space-x-10">
             <a
