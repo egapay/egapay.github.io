@@ -3,7 +3,7 @@ import MainContent from "./MainContent";
 import MainNav from "./MainNav";
 
 const Homepage = () => {
-  const [activeSection, setActiveSection] = useState("Landing");
+  const [activeSection, setActiveSection] = useState("About");
 
   const handleSelectedSection = (section) => {
     setActiveSection(section);
