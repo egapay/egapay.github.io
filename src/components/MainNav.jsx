@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import "./MainNav.css";
-import resume from "../assets/resume.pdf";
+import resume from "../assets/Ethan Gapay - Resume.pdf";
 import { useState, useRef } from "react";
 
 const MainNav = ({ onButtonClick }) => {
@@ -86,7 +86,7 @@ const MainNav = ({ onButtonClick }) => {
             <ul className="menu menu-horizontal px-5">
               <li>
                 <details ref={dropdownRef}>
-                  <summary>{activeButton}</summary>
+                  <summary className="text-lg">{activeButton}</summary>
                   <ul className="bg-main-white rounded-t-none p-2">
                     <li>
                       <button
