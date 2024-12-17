@@ -91,8 +91,8 @@ const MainNav = ({ onButtonClick }) => {
                     <li>
                       <button
                         onClick={() => handleSetActive("About")}
-                        className={`text-main-background ${
-                          activeButton === "About" ? "btn-active" : ""
+                        className={`text-main-background btn ${
+                          activeButton === "About" ? "btn-active btn-ghost" : ""
                         }`}
                       >
                         About
@@ -101,8 +101,10 @@ const MainNav = ({ onButtonClick }) => {
                     <li>
                       <button
                         onClick={() => handleSetActive("Skills")}
-                        className={`text-main-background ${
-                          activeButton === "Skills" ? "btn-active" : ""
+                        className={`text-main-background btn ${
+                          activeButton === "Skills"
+                            ? "btn-active btn-ghost"
+                            : ""
                         }`}
                       >
                         Skills
@@ -111,8 +113,10 @@ const MainNav = ({ onButtonClick }) => {
                     <li>
                       <button
                         onClick={() => handleSetActive("Projects")}
-                        className={`text-main-background ${
-                          activeButton === "Projects" ? "btn-active" : ""
+                        className={`text-main-background btn ${
+                          activeButton === "Projects"
+                            ? "btn-active btn-ghost"
+                            : ""
                         }`}
                       >
                         Projects
@@ -120,7 +124,7 @@ const MainNav = ({ onButtonClick }) => {
                     </li>
                     <li>
                       <button
-                        className="text-main-background"
+                        className="text-main-background btn "
                         onClick={openPdf}
                       >
                         Resume
