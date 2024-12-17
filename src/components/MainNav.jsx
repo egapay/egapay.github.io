@@ -92,7 +92,9 @@ const MainNav = ({ onButtonClick }) => {
                       <button
                         onClick={() => handleSetActive("About")}
                         className={`text-main-background btn ${
-                          activeButton === "About" ? "btn-active btn-ghost" : ""
+                          activeButton === "About"
+                            ? "bg-main-accent text-main-white"
+                            : "btn-ghost"
                         }`}
                       >
                         About
@@ -103,8 +105,8 @@ const MainNav = ({ onButtonClick }) => {
                         onClick={() => handleSetActive("Skills")}
                         className={`text-main-background btn ${
                           activeButton === "Skills"
-                            ? "btn-active btn-ghost"
-                            : ""
+                            ? "bg-main-accent text-main-white"
+                            : "btn-ghost"
                         }`}
                       >
                         Skills
@@ -115,8 +117,8 @@ const MainNav = ({ onButtonClick }) => {
                         onClick={() => handleSetActive("Projects")}
                         className={`text-main-background btn ${
                           activeButton === "Projects"
-                            ? "btn-active btn-ghost"
-                            : ""
+                            ? "bg-main-accent text-main-white"
+                            : "btn-ghost"
                         }`}
                       >
                         Projects
@@ -124,7 +126,7 @@ const MainNav = ({ onButtonClick }) => {
                     </li>
                     <li>
                       <button
-                        className="text-main-background btn "
+                        className="text-main-background btn btn-ghost"
                         onClick={openPdf}
                       >
                         Resume
