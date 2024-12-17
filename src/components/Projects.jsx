@@ -14,7 +14,7 @@ const Projects = ({ projectList }) => {
                 <p className="pb-4 pl-2 italic text-lg">
                   {project.description}
                 </p>
-                <div className="flex flex-row space-x-3 overflow-scroll-auto overflow-y-hidden">
+                <div className="flex flex-row space-x-3 overflow-scroll-auto overflow-y-hidden overflow-x-visible lg:overflow-x-hidden">
                   {project.tags.map((tag, index) => (
                     <div className="badge badge-neutral h-auto" key={index}>
                       {tag}
