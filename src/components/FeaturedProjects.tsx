@@ -55,7 +55,7 @@ export default function FeaturedProjects() {
         </CardTitle>
       </CardHeader>
 
-      <CardContent className="flex flex-col gap-3 overflow-y-auto pr-2 max-h-[420px] scrollbar-thin scrollbar-thumb-muted scrollbar-track-transparent">
+      <CardContent className="flex flex-col gap-3 overflow-y-auto px-2 sm:px-4 max-h-[420px] scrollbar-thin scrollbar-thumb-muted scrollbar-track-transparent">
         {projects.map((project) => (
           <a
             key={project.title}
