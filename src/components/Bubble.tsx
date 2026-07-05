@@ -117,7 +117,7 @@ function BubbleBackground({
       ref={containerRef}
       data-slot="bubble-background"
       className={cn(
-        'relative size-full overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900',
+        'relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900',
         className,
       )}
       style={{ position: 'relative', zIndex: 1, ...props.style }}

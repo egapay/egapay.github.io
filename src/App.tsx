@@ -3,8 +3,7 @@ import Home from "./pages";
 function App() {
 
   return (
-    <div className="min-h-screen overflow-y-auto flex flex-col">
-      {/* bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 */}
+    <div className="min-h-screen w-full overflow-y-auto flex flex-col">
       <Home />
     </div>
   );
