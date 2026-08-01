@@ -28,7 +28,7 @@ export const socials = [
  * question. Do not add a metric without one.
  */
 export const metrics = [
-  { value: "5M", unit: "hands", label: "Blackjack outcomes modeled", source: "Blackjack Odds Analysis" },
+  { value: "5M", unit: "hands", label: "Blackjack outcomes modeled", source: "Blackjack Game Analysis" },
   { value: "2K+", unit: "pages", label: "Adobe Analytics tags extracted", source: "Samsung.com Analytics" },
   { value: "10K+", unit: "orders", label: "Sales records visualized", source: "Regional Sales Dashboard" },
   { value: "100+", unit: "cases", label: "Misrouted tickets auto-detected", source: "Cisco TAC automation" },
@@ -103,7 +103,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Blackjack Odds Analysis",
+    title: "Blackjack Game Analysis",
     category: "Analytics",
     blurb:
       "A statistical study of 5 million simulated hands, mapping how strategy choices move the house edge.",
