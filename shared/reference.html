@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio.css — component reference</title>
+    <meta name="robots" content="noindex" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./portfolio.css" />
+  </head>
+  <body class="grid-field">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- 1. Site header -->
+    <header class="site-header">
+      <div class="wrap site-header__inner">
+        <a class="site-header__brand label-mono" href="https://egapay.github.io/"
+          >Ethan Gapay</a
+        >
+        <a
+          class="site-header__back label-mono"
+          href="https://egapay.github.io/#projects"
+          >Portfolio</a
+        >
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- 2. Page hero -->
+      <div class="wrap wrap--doc">
+        <section class="page-hero">
+          <p class="page-hero__eyebrow label-mono">Analytics — Reference</p>
+          <h1 class="page-hero__title">Component reference</h1>
+          <p class="page-hero__lede">
+            Every component in portfolio.css, rendered together so the system
+            can be checked in one place before it is applied to the three
+            project pages.
+          </p>
+          <div class="page-hero__meta">
+            <!-- 3. Metric -->
+            <p class="metric">
+              <span class="metric__value">11</span>
+              <span class="metric__label label-mono">components</span>
+            </p>
+            <!-- 4. Tags -->
+            <ul class="tag-list">
+              <li class="tag">Python</li>
+              <li class="tag">PostgreSQL</li>
+              <li class="tag">Pandas</li>
+              <li class="tag">Power BI</li>
+              <li class="tag">ETL</li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="doc">
+          <!-- 5. Document section + 6. Prose -->
+          <section class="doc-section" id="prose">
+            <h2 class="doc-section__title">
+              <span class="doc-section__index">01</span>Prose
+            </h2>
+            <div class="prose">
+              <p>
+                Body copy sits at <strong>ink-2</strong> against the panel,
+                capped at a readable measure. Inline
+                <a href="#prose">links take the signal amber</a>, and
+                <em>emphasis</em> drops to the quietest ink so it reads as an
+                aside rather than a shout. Inline <code>code</code> gets a
+                panel chip.
+              </p>
+              <h3>A third-level heading</h3>
+              <ul>
+                <li>Unordered items take an amber marker.</li>
+                <li>
+                  Line height and spacing are tuned for long-form reading, not
+                  for dense UI.
+                </li>
+              </ul>
+              <ol>
+                <li>Ordered items switch the marker to the mono face.</li>
+                <li>This keeps numbered process steps feeling instrumented.</li>
+              </ol>
+            </div>
+          </section>
+
+          <!-- 7. Report embeds -->
+          <section class="doc-section" id="reports">
+            <h2 class="doc-section__title">
+              <span class="doc-section__index">02</span>Report embeds
+            </h2>
+            <div class="prose">
+              <p>
+                Embeds take a fixed height on narrow screens and hand sizing
+                to aspect-ratio from 768px up, replacing the fixed
+                <code>75vh</code> that distorted every inline report.
+              </p>
+              <figure class="report report--full">
+                <div class="report__frame">
+                  <iframe
+                    title="Reference dashboard — full width"
+                    src="https://app.powerbi.com/view?r=eyJrIjoiY2IyOGZmZGUtZGFjYy00MTQ2LTljYjgtZTkzOTMyYjk4NTIxIiwidCI6IjhhODUwYTk1LTIwODItNDk3Yi05NjBiLTE1YmZjZDUzZDM2YyIsImMiOjJ9"
+                    allowfullscreen
+                    loading="lazy"
+                  ></iframe>
+                </div>
+                <figcaption class="report__caption label-mono">
+                  report--full · 16:9
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <!-- 8. Finding -->
+          <section class="doc-section" id="findings">
+            <h2 class="doc-section__title">
+              <span class="doc-section__index">03</span>Findings
+            </h2>
+            <div class="prose">
+              <div class="finding">
+                <h3 class="finding__question">
+                  What is the correlation between game price and average
+                  playtime?
+                </h3>
+                <figure class="report report--inline">
+                  <div class="report__frame">
+                    <iframe
+                      title="Price against average playtime"
+                      src="https://app.powerbi.com/view?r=eyJrIjoiYTlmNWE3NjgtZjY3Ni00MzU2LWIzYjQtOWFmMzZjZjhkNjdlIiwidCI6IjhhODUwYTk1LTIwODItNDk3Yi05NjBiLTE1YmZjZDUzZDM2YyIsImMiOjJ9&pageName=c28ab8c09606d6558a3c"
+                      allowfullscreen
+                      loading="lazy"
+                    ></iframe>
+                  </div>
+                </figure>
+                <p>
+                  The interpretation follows the chart inside the same panel, so
+                  a question, its evidence, and its answer read as one unit
+                  rather than three loose blocks.
+                </p>
+              </div>
+
+              <div class="finding">
+                <h3 class="finding__question">
+                  A second finding, to check the stacking rhythm.
+                </h3>
+                <p>
+                  Findings can also carry no embed at all — the panel still
+                  holds together.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- 9. Code block -->
+          <section class="doc-section" id="code">
+            <h2 class="doc-section__title">
+              <span class="doc-section__index">04</span>Code
+            </h2>
+            <div class="prose">
+              <div class="code-block">
+                <span class="code-block__lang label-mono">Python</span>
+                <pre><code>apiEndpoint = "https://steamspy.com/api.php?request=top100forever"
+response = requests.get(apiEndpoint)
+data = response.json()</code></pre>
+              </div>
+              <div class="code-block">
+                <span class="code-block__lang label-mono">JSON</span>
+                <pre><code>"730": {
+  "appid": 730,
+  "name": "Counter-Strike: Global Offensive",
+  "positive": 7325394,
+  "negative": 1102354,
+  "average_forever": 29986
+}</code></pre>
+              </div>
+            </div>
+          </section>
+
+          <!-- 10. Table -->
+          <section class="doc-section" id="tables">
+            <h2 class="doc-section__title">
+              <span class="doc-section__index">05</span>Tables
+            </h2>
+            <div class="prose">
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>dealer_up</th>
+                      <th>initial_hand</th>
+                      <th>dealer_final</th>
+                      <th>dealer_final_value</th>
+                      <th>player_final</th>
+                      <th>actions_taken</th>
+                      <th>win</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>6</td>
+                      <td>[3, 3]</td>
+                      <td>[6, 10, 10]</td>
+                      <td>26</td>
+                      <td>[[3, 2, 10], [3, 4, 5]]</td>
+                      <td>[['P', 'H', 'S'], ['H', 'S']]</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>[8, 3]</td>
+                      <td>[10, 7]</td>
+                      <td>17</td>
+                      <td>[[8, 3, 9]]</td>
+                      <td>[['H', 'S']]</td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+
+          <!-- 11. Figure -->
+          <section class="doc-section" id="figures">
+            <h2 class="doc-section__title">
+              <span class="doc-section__index">06</span>Figures
+            </h2>
+            <div class="prose">
+              <figure class="figure">
+                <img
+                  src="https://egapay.github.io/egapay.jpg"
+                  alt="Placeholder standing in for a project screenshot"
+                  loading="lazy"
+                />
+                <figcaption class="label-mono">
+                  Figure — schema diagrams and screenshots use this treatment
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- 12. Footer -->
+    <footer class="site-footer">
+      <div class="wrap site-footer__inner">
+        <p class="site-footer__note">© 2026 Ethan Gapay</p>
+        <a class="site-footer__link" href="#main">Back to top</a>
+      </div>
+    </footer>
+  </body>
+</html>
