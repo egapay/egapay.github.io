@@ -9,7 +9,9 @@
   "build": "vite build",
   "preview": "vite preview",
   "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+  "deploy": "gh-pages -d dist",
+  "sync:css": "node shared/sync.mjs",
+  "check:css": "node shared/sync.mjs --check"
   },
   "dependencies": {
     "@radix-ui/react-aspect-ratio": "^1.1.8",
