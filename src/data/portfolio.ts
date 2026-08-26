@@ -121,7 +121,7 @@ export const projects: Project[] = [
     blurb:
       "A stakeholder-facing Power BI dashboard turning 10,000+ e-commerce orders into decisions about regional performance.",
     detail: [
-      "Designed KPI cards, bar and area charts, and detail tables around the questions stakeholders actually asked.",
+      "Designed KPI cards, bar and area charts, and detail tables around stakeholder questions.",
       "Modeled an Excel order dataset for a fictional e-commerce company to surface sales performance and regional trends.",
     ],
     metric: { value: "10K+", label: "orders visualized" },

@@ -1,17 +1,16 @@
 {
-  "homepage": "https://egapay.github.io/",
+  "homepage": "https://ethangapay.com",
   "name": "egapay.github.io",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist",
-  "sync:css": "node shared/sync.mjs",
-  "check:css": "node shared/sync.mjs --check"
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy:redirect": "gh-pages -d redirect -m \"Redirect egapay.github.io to ethangapay.com\"",
+    "sync:css": "node shared/sync.mjs",
+    "check:css": "node shared/sync.mjs --check"
   },
   "dependencies": {
     "@radix-ui/react-aspect-ratio": "^1.1.8",
