@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Ethan Gapay — now at ethangapay.com</title>
-    <link rel="canonical" href="https://www.ethangapay.com/" />
     <meta http-equiv="refresh" content="0; url=https://www.ethangapay.com/" />
 
     <script>
-      // Carry the hash across so old deep links (/#projects, /#work) still
-      // land on the right section rather than dumping visitors at the top.
-      location.replace("https://www.ethangapay.com/" + location.hash);
+      // Unmatched paths under the old domain (/resume.pdf, /egapay.jpg, ...)
+      // keep their path so the request resolves on the new domain instead of
+      // dead-ending. The three project sites never reach this file — GitHub
+      // serves /blackjack-analysis/ and friends from their own repos.
+      location.replace(
+        "https://www.ethangapay.com" +
+          location.pathname +
+          location.search +
+          location.hash,
+      );
     </script>
 
     <style>
