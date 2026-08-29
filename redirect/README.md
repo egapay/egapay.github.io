@@ -32,3 +32,15 @@ need no changes. Copy the originals from `public/` if they are ever updated:
 
 The alternative is repointing those references in each project repo at
 `www.ethangapay.com`, after which these copies can be deleted.
+
+## Why Vercel ignores this branch
+
+Vercel builds every branch pushed to the repo, so publishing here used to
+trigger a preview deployment that failed with `vite build: exited with 127` —
+this branch is plain HTML with no `package.json` for vite to run from. The root
+`vercel.json` now opts the branch out:
+
+    "git": { "deploymentEnabled": { "gh-pages": false } }
+
+That config only takes effect once a production deployment carries it, so the
+first push here after adding it may still produce one last failed build.
